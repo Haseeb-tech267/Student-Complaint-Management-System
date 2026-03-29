@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>College Complaint System</title>
+  
+  <style>
+    body {
+      background-image: url("Jamia_Hamdard_Logo.svg_.png");
+      background-repeat: no-repeat;  
+      background-position: top center;   
+      background-size: 455px;
+      background-color: rgb(200, 255, 200);  
+      min-height: 100vh;
+      margin: 0px; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h1 {
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .link {
+      display: flex;
+      gap: 80px;
+    }
+    .link a {
+      padding: 14px 28px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+       background: linear-gradient(135deg, #017303, #02851e);
+      color: #fff;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .link a:hover {
+       background: linear-gradient(135deg, #22c55e, #16a34a);
+       color: #fff;
+    }
+    h1 {
+       margin-top: 420px; 
+       text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        background-size: 340px;
+      }
+
+      h1 {
+        margin-top: 340px;
+        font-size: 2.1rem;
+      }
+
+      .link {
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        background-size: 250px;
+        padding: 0 12px;
+      }
+
+      h1 {
+        margin-top: 270px;
+        font-size: 1.6rem;
+        line-height: 1.2;
+      }
+
+      .link {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .link a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Campus Complaint Portal!</h1>
+  <div class="link">
+    <a href="student.html">I'm a Student</a>
+    <a href="admin.html">I'm an Admin</a>
+  </div>
+  
+</body>
+</html>

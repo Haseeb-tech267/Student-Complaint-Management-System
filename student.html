@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Complaint Portal</title>
+  <link rel="stylesheet" href="style.css" />
+ 
+</head>
+<body>
+<main>
+  <!-- STUDENT LOGIN -->
+  <section id="studentLoginView" class="active">
+    <h2>Student Login</h2>
+    <form id="studentLoginForm" >
+      <label for="studentUser">Email or Roll Number</label>
+      <input id="studentUser" type="text" name="studentUser" placeholder="Enter email or roll number" required />
+      <button type="submit">Login</button>
+    </form>
+     </section>
+
+  <!-- STUDENT COMPLAINT -->
+  <section id="studentComplaintView">
+    <h2>Submit a Complaint</h2>
+    <form id="complaintForm">
+      <label for="name">Full Name</label>
+      <input id="name" name="name" required type="text" placeholder="Your full name" required/>
+      <label for="rollNo">Roll Number</label>
+      <input id="rollNo" name="roll" required type="text" placeholder="Your roll number" required/>
+      <label for="email">Email Address</label>
+      <input id="email" name="email" required type="email" placeholder="Your email address" required/>
+      <label for="mobile">Mobile Number</label>
+      <input id="mobile" name="mobile" required type="text" placeholder="Your mobile number" required/>
+      <label for="category">Complaint Category</label>
+      <select id="category" name="category" required>
+        <option disabled selected value="">Select category</option>
+        <option value="Academics">Academics</option>
+        <option value="Facilities">Facilities</option>
+        <option value="Hostel">Hostel</option>
+        <option value="Transport">Transport</option>
+        <option value="Others">Others</option>
+      </select>
+      <label for="message">Complaint Details</label>
+      <textarea id="message" name="message" required rows="4" placeholder="Write complaint here...s"></textarea>
+      <button type="submit">Submit Complaint</button>
+    </form>
+    <hr />
+    <h3>Your Submitted Complaints</h3>
+    <table id="studentComplaintsTable">
+      <thead>
+        <tr><th>Category</th><th>Complaint</th><th>Status</th><th>Date</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <p class="center"><a href="#" id="studentLogout">Logout</a></p>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
